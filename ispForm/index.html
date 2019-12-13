@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ISP Survey</title>
+</head>
+<body>
+    <h1 id="title">Ethernet ISP Client Questionnaire</h1>
+<div id="form-outer">
+  <p id="description">
+    Network Customer Problem Discovery
+  </p>
+  <form id="survey-form" method="GET" >
+    <section class="profiles">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+   
+<!-- end of demographics -->
+    <section class="topology">
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Select the closest description of your neighborhood</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option  value="student">Rural</option>
+      <option value="job">Suburban</option>
+      <option value="learner">Urban</option>
+      <option value="preferNo">Not in the suburbs but definitely not in the country</option>
+      <option value="other">Other</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Select the closest description of your residency</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option  value="student">I own my home.</option>
+      <option value="job">I rent my living space.</option>
+      <option value="learner">I live in a family-owned home.</option>
+      <option value="preferNo">off the porch</option>
+      <option value="other">Other</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">How many people in your residency consume wifi data?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>none<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>one<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>two or three<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>more than three<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+    </section>
+<!-- end of topology -->
+    <section class="mobile">
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">How many connected devices do you own?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>none<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>one<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>two or three<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>more than three<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">How many devices are covered by your phone plan?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>none<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>one<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>two or three<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>more than three<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">Describe the consistency of your mobile service coverage: </label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Works Perfectly Everywhere<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>No problems at home<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>No problems at work<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>No problems at home or work, but between the two my signal is sketchy.<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+    </section>
+<!-- end of mobile --> 
+    <section class="transactions">
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">Which payment plan is most applicable to how you pay for your telecommunication services?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Pay-As You Go<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Monthly Subscription<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Pay-Per Use<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="most-like">What do you value most about your telecommunication servies? </label>
+      </div>
+      <div class="rightTab">
+        <select id="most-like" name="mostLike" class="dropdown">
+      <option disabled selected value>Select an option</option>
+      <option value="challenges">The Bundling, its convenient.</option>
+      <option value="projects">The Service, they're nice to work with</option>
+      <option value="community">The Prices, the best price.</option>
+      <option value="openSource">Open Source</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">Select all the ways you pay for the data you consume<br>(Check all that apply): </label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Home Phone Line</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Home Fax Line</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Internet Service/ Home Wifi</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Cable</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Mobile data plan</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Wifi Pirate</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Data Nomad</label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">Family Plan</label></li>
+          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Bundled Services</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Security System Services</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Peer to Peer Sharing</label></li>
+        </ul>
+      </div>
+    </div>
+    </section> 
+<!-- end of transaction -->
+    <section class="comments">
+    <div class="rowTab">
+      
+      <div class="labels">
+        <label for="comments">Any Comments or Suggestions?</label>
+      </div>
+      
+      
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <div class="rowTab">
+    </div> 
+    </section>
+<!-- end of transaction -->
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+  
+<!--  This is how plantations work.  -->
+  
+<!--  The owner sets the rules. -->
+  
+<!--  An owner, a worker, and an asset--owned by the landowner, worked by the worker--exist.  -->
+  
+<!--  The worker pays the owner, the owner pays to maintain the asset, the asset pays the owner. -->
+  
+<!--  The worker gets nothing but experiences.  -->
+  
+<!--  The worker is replaceable. The owner is replaceable; the ownership is irreplaceable, time. food. let's eat -->
+</body>
+</html>
